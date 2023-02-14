@@ -14,6 +14,9 @@ form.addEventListener('submit', (e) => {
         const desc = data.weather[0].description;
         weatherInfo.innerHTML = 'Temperature: ${temp}&deg;C<br>Conditions: ${desc}';
     })
+    .catch(error => {
+        console.log(error);
+        weatherInfo.innerHTML = 'An error occured. Please try again';
+    });
     
-    }
-}
+    });
