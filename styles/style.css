@@ -28,3 +28,12 @@ button[type="submit"] {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+button[type="submit"]:hoover {
+    background-color: hotpink;
+}
+
+#weather-info {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
